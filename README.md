@@ -1,5 +1,20 @@
 # dotnet-6-crud-api
 
-.NET 6.0 - CRUD API Example
+.NET 6.0 - LOGIN AND CRUD USERS
 
-Documentation at https://jasonwatmore.com/post/2022/03/15/net-6-crud-api-example-and-tutorial
+CARA MENJALANKAN FILE
+
+1. Set up database di file appsettings.json :
+   "ConnectionStrings": {
+   "WebApiDatabase": "server=your_local; database=your_database; user=your_username; password=your_password"
+   },
+2. Jalankan dotnet run
+3. Lalu jalankan di browser / postman atau yang lainnya :
+   - POST https://localhost:5001/users/authenticate
+   - POST https://localhost:5001/users/logout
+   - GET https://localhost:5001/users/
+   - GET https://localhost:5001/users/{id}
+   - POST https://localhost:5001/users/
+   - PUT https://localhost:5001/users/{id}
+   - PUT https://localhost:5001/users/{id}/changepassword
+   - DELETE https://localhost:5001/users/{id}
