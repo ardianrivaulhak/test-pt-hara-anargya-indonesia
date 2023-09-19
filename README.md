@@ -8,6 +8,7 @@ CARA MENJALANKAN FILE
    "ConnectionStrings": {
    "WebApiDatabase": "server=your_local; database=your_database; user=your_username; password=your_password"
    },
+   Run the command 'dotnet ef database update' from the project root folder to execute the EF Core migrations and create the database and tables in MySQL.
 2. Jalankan dotnet run
 3. Lalu jalankan di browser / postman atau yang lainnya :
    - POST https://localhost:5001/users/authenticate
